@@ -49,6 +49,29 @@ class TestAdvancedOperations:
         assert calculator.power(5, 0) == 1
         assert calculator.power(2, -1) == 0.5
     
+    def test_square(self, calculator):
+        """Test square operation"""
+        assert calculator.square(4) == 16
+        assert calculator.square(5) == 25
+        assert calculator.square(0) == 0
+    
+    def test_cube(self, calculator):
+        """Test cube operation"""
+        assert calculator.cube(2) == 8
+        assert calculator.cube(3) == 27
+        assert calculator.cube(0) == 0
+    
+    def test_modulo(self, calculator):
+        """Test modulo operation"""
+        assert calculator.modulo(10, 3) == 1
+        assert calculator.modulo(7, 2) == 1
+        assert calculator.modulo(20, 5) == 0
+    
+    def test_modulo_by_zero(self, calculator):
+        """Test modulo by zero raises ValueError"""
+        with pytest.raises(ValueError, match="zero divisor"):
+            calculator.modulo(10, 0)
+    
     def test_square_root(self, calculator):
         """Test square root operation"""
         assert calculator.square_root(4) == 2.0
