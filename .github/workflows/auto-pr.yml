@@ -65,7 +65,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: ${{ steps.commit_info.outputs.commit_message }}
-          title: "🤖 Auto-update: ${{ github.event.head_commit.timestamp }}"
+          title: "🤖 Auto-update: Professional Calculator Project"
           body: |
             # 🚀 Otomatik Pull Request
             
