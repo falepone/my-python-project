@@ -113,7 +113,31 @@ class Calculator:
         self._log_operation(f"factorial({n}) = {result}")
         return result
     
-    def fibonacci(self, n: int) -> List[int]:
+    def modulo(self, a: Union[int, float], b: Union[int, float]) -> float:
+        """
+        Calculate modulo (remainder) of a divided by b
+        
+        Raises:
+            ValueError: If b is zero
+        """
+        if b == 0:
+            raise ValueError("Cannot calculate modulo with zero divisor")
+        
+        result = a % b
+        self._log_operation(f"modulo({a}, {b}) = {result}")
+        return round(result, self.precision)
+    
+    def square(self, n: Union[int, float]) -> float:
+        """Calculate the square of a number"""
+        result = n ** 2
+        self._log_operation(f"square({n}) = {result}")
+        return round(result, self.precision)
+    
+    def cube(self, n: Union[int, float]) -> float:
+        """Calculate the cube of a number"""
+        result = n ** 3
+        self._log_operation(f"cube({n}) = {result}")
+        return round(result, self.precision)
         """
         Generate first n Fibonacci numbers
         
