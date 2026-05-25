@@ -29,6 +29,9 @@ def main():
     print(f"2^10 = {calc.power(2, 10)}")
     print(f"√144 = {calc.square_root(144)}")
     print(f"5! = {calc.factorial(5)}")
+    print(f"4² = {calc.square(4)}")
+    print(f"3³ = {calc.cube(3)}")
+    print(f"17 mod 5 = {calc.modulo(17, 5)}")
     
     # Demonstrate Fibonacci
     print("\n📈 Fibonacci Sequence (First 10):")
