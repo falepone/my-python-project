@@ -1,0 +1,18 @@
+{
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 2000,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "editor.rulers": [80, 120],
+  "editor.wordWrap": "on",
+  "git.autorefresh": true,
+  "git.autofetch": true,
+  "extensions.ignoreRecommendations": false
+}
